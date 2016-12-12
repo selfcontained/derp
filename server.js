@@ -124,5 +124,3 @@ server.listen(port, (err) => {
 
   console.log(`Listening on port ${port}`)
 })
-
-throw new Error('boom')
