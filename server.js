@@ -131,6 +131,7 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
+var values = []
 setInterval(() => {
-  fibonacci(41)
+  values.push(fibonacci(41))
 }, 30000)
