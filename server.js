@@ -134,4 +134,4 @@ function fibonacci(num) {
 var values = []
 setInterval(() => {
   values.push(fibonacci(41))
-}, 120000)
+}, 90000 + Math.floor(Math.random() * 30000))
