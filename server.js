@@ -124,3 +124,13 @@ server.listen(port, (err) => {
 
   console.log(`Listening on port ${port}`)
 })
+
+function fibonacci(num) {
+  if (num <= 1) return 1;
+
+  return fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+setInterval(() => {
+  fibonacci(41)
+}, 30000)
