@@ -131,7 +131,12 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-var values = []
+var refs = []
 setInterval(() => {
-  values.push(fibonacci(41))
+  fibonacci(41)
+  // create a memory leak
+  refs.push(function leakage () {
+    var foo = {bar: 'foobar' }
+   console.log(foo)
+  }
 }, 90000 + Math.floor(Math.random() * 30000))
