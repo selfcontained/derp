@@ -118,7 +118,7 @@ var server = slapp.attachToExpress(express())
 
 server.get('/echo', (req, res, next) => {
   console.log('Headers: ', JSON.stringify(req.headers, null, 2))
-  res.send('ok)
+  res.send('ok')
 })
 
 // start http server
