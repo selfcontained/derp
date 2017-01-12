@@ -139,9 +139,9 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-setInterval(
-  () => fibonacci(41), 
-  90000 + Math.floor(Math.random() * 30000)
-)
+//setInterval(
+//  () => fibonacci(41), 
+//  90000 + Math.floor(Math.random() * 30000)
+//)
   
   
