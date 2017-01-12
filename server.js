@@ -121,6 +121,10 @@ server.get('/echo', (req, res, next) => {
   res.send('ok')
 })
 
+server.get('/health', (req, res) => {
+  res.sendStatus(200)
+})
+
 // start http server
 server.listen(port, (err) => {
   if (err) {
