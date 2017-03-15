@@ -125,6 +125,14 @@ server.get('/health', (req, res) => {
   res.sendStatus(200)
 })
 
+server.get('/redirect-me', (req, res) => {
+  res.redirect('/redirected-to')
+})
+
+server.get('/redirected-to', (req, res) => {
+  res.send('it worked')
+})
+
 // start http server
 server.listen(port, (err) => {
   if (err) {
